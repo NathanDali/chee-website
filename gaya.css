@@ -117,3 +117,24 @@ nav a{
 }
 
 }
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited{
+    color: white;
+}
+
+nav a:hover{
+    border-bottom:2px solid white;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+}
