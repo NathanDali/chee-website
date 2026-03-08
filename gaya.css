@@ -1,18 +1,21 @@
+/* BODY */
+
 body{
     margin:0;
     font-family: Arial;
-    background-image: url("back.jpeg");
-    background-size: cover;
-    background-position: center;
+    background-image:url("back.jpeg");
+    background-size:cover;
+    background-position:center;
     text-align:center;
 }
+
 
 /* HEADER */
 
 header{
-    position: fixed;
+    position:fixed;
     top:0;
-    width:100%;
+    width:100%; 
 }
 
 nav{
@@ -33,52 +36,64 @@ nav a:hover{
     border-bottom:2px solid white;
 }
 
+nav a:visited{
+    color:white;
+}
+
 .akun{
     width:25px;
 }
 
+
 /* CONTAINER */
 
 .container{
-    margin-top:150px;
+    margin-top:200px;
     display:flex;
     flex-direction:column;
     align-items:center;
     gap:20px;
 }
 
+
 /* LOGO */
 
 .logo img{
-    width:250px;
-    max-width:80%;
+    width:450px;
+    max-width:100%;
 }
+
 
 /* SEARCH */
 
 .search{
     position:relative;
-    width:500px;
-    max-width:90%;
+    width:90%;
+    max-width:500px;
+    margin:0 auto;
 }
 
 .search input{
     width:100%;
-    padding:12px 40px 12px 20px;
+    padding:12px 40px;
     border-radius:25px;
     border:none;
     font-size:16px;
+    box-sizing:border-box;
 }
+
 
 /* MIC ICON */
 
 .mic{
     position:absolute;
-    right:15px;
+    right:10px;
     top:50%;
     transform:translateY(-50%);
     width:18px;
+    cursor: pointer;
 }
+
 
 /* BUTTON */
 
@@ -90,13 +105,15 @@ nav a:hover{
     color:white;
     font-size:15px;
     cursor:pointer;
+    width:100px;
 }
 
 .button:hover{
     background:#69713c;
 }
 
-/* RESPONSIVE HP */
+
+/* RESPONSIVE */
 
 @media (max-width:600px){
 
@@ -112,29 +129,8 @@ nav a{
     width:180px;
 }
 
-.button{
-    width:90%;
 }
 
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-}
-
-nav a:visited{
-    color: white;
-}
-
-nav a:hover{
-    border-bottom:2px solid white;
-}
-
-nav{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:20px;
-    padding:15px;
+nav img{
+    cursor: pointer;
 }
