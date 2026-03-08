@@ -1,102 +1,119 @@
 body{
-    background-image: url("back.jpeg");
-    background-color: #7e1e1e;
-    text-align: center;
+    margin:0;
     font-family: Arial;
+    background-image: url("back.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align:center;
 }
 
-h1{
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 255);
+/* HEADER */
+
+header{
+    position: fixed;
+    top:0;
+    width:100%;
 }
 
+nav{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+}
+
+nav a:hover{
+    border-bottom:2px solid white;
+}
+
+.akun{
+    width:25px;
+}
+
+/* CONTAINER */
+
+.container{
+    margin-top:150px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+/* LOGO */
+
+.logo img{
+    width:250px;
+    max-width:80%;
+}
+
+/* SEARCH */
 
 .search{
-    position: relative;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
+    position:relative;
+    width:500px;
+    max-width:90%;
 }
 
 .search input{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    padding-left: 35px;
-    border-color: aqua;
+    width:100%;
+    padding:12px 40px 12px 20px;
+    border-radius:25px;
+    border:none;
+    font-size:16px;
 }
 
-.search img{
-    width: 20px;
-    position: absolute;
-    right: -30px;
-    top: 10px;
-}
-
-.container{
-    text-align: center;
-    margin-top: 250px;
-}
+/* MIC ICON */
 
 .mic{
-    width: 18px;
-    position: absolute;
-    right: 40px; 
-    top: 10px;
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    width:18px;
 }
 
+/* BUTTON */
 
-.button {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 20px;
-    background: #3386a7;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
+.button{
+    padding:10px 25px;
+    border:none;
+    border-radius:20px;
+    background:#3386a7;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
 }
 
-
-header {
-    display: flex;           
-    gap: 20px;        
-    color: rgb(255, 255, 255);      
-    margin-right: 20px;        
-    padding-bottom: 7px;        
-    border-bottom: 3px solid rgb(255, 255, 255); 
-    align-items: center;
-    cursor: pointer;    
-    position: absolute;
-    right: 20px;
-    top: 10px;   
+.button:hover{
+    background:#69713c;
 }
 
-header h1:hover { /* header muncul garis bawah saat disentuh*/
-    border-bottom: 2px solid #ffffff; 
+/* RESPONSIVE HP */
+
+@media (max-width:600px){
+
+nav{
+    gap:10px;
 }
 
-@media screen and (max-width: 500px) {
-    header {
-        flex-direction: row; 
-        gap: 10px;
-        align-items: center;
-    }
+nav a{
+    font-size:12px;
 }
 
-.button:hover { /* warna search saat disentuh*/
-    background: #69713c;
+.logo img{
+    width:180px;
 }
 
-header img{  /*logo akun*/
-    width: 20px;
-    padding: 10px;
-    margin-left: auto;
+.button{
+    width:90%;
 }
 
-.container img{
-    max-width: 80%;
-    height: auto;
 }
-
